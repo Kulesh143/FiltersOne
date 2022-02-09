@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>myshortname</short-name>
+    <uri>http://mycompany.com</uri>
+
+    <!-- Invoke 'Generate' action to add tags or functions -->
+<tag>
+    <name>test</name>
+    <tag-class>com.intellij.project.firstproject.test</tag-class>
+    <body-content>empty</body-content>
+</tag>
+    <tag>
+        <name>sc</name>
+        <tag-class>com.intellij.project.firstproject.scri</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+    <tag>
+        <name>attag</name>
+        <tag-class>com.intellij.project.firstproject.scan</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>x</name>
+            <required>true</required>
+            <type>java.lang.Integer</type>
+        </attribute>
+    </tag>
+    <tag>
+        <name>if</name>
+        <tag-class>com.intellij.project.firstproject.iffy</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>test</name>
+            <required>true</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+    </tag>
+<tag>
+    <name>for</name>
+    <tag-class>com.intellij.project.firstproject.Forfour</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+        <name>var</name>
+        <required>true</required>
+        <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+        <name>items</name>
+        <required>true</required>
+        <type>java.util.ArrayList</type>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>begin</name>
+        <required>true</required>
+        <type>java.lang.Integer</type>
+    </attribute>
+    <attribute>
+        <name>end</name>
+        <required>true</required>
+        <type>java.lang.Integer</type>
+    </attribute>
+</tag>
+    <tag>
+        <name>flow-control</name>
+        <tag-class>com.intellij.project.firstproject.viva</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+    <tag>
+        <name>when</name>
+        <tag-class>com.intellij.project.firstproject.vi</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>test</name>
+            <required>true</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+    </tag>
+    <tag>
+        <name>otherwise</name>
+        <tag-class>com.intellij.project.firstproject.va</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+</taglib>
